@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Feeder IoT Project</title>
+    <link rel="icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body background="background.jpg">
+    
+<div class="mainDiv">
+
+    <div class="distanceDiv">
+        <h1 id="distance">Distance: -- cm </h1>
+        <div id="status"><h1 id="fullness">%</h1> <h1>food left</h1></div>
+        <div class="progress-container">
+            <div class="progress-bar" id="foodProgress"></div>
+          </div>
+    </div>
+    <br>
+    <br>
+    <img id="pet"> <br> <br>
+    <button id="dispense-btn" onclick="dispenseFood()">Dispense food</button> <br> <br>
+    <div id="dispense-msg"></div>
+</div>
+
+
+
+<div id="bg"></div>
+
+<div class="reminder-popup" id="reminderPopup">
+    <span class="close-btn" id="closeReminder"><img id="close-icon" src="close.svg"></span>
+    <img src="pawprint.svg" id="pawprint">
+    <p id="reminder-message">It's time to refill the food container!</p>
+    <audio id="reminderSound" src="success.mp3"></audio>
+  </div>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+<script src="js.js"></script>
+
+
+</body>
+</html>

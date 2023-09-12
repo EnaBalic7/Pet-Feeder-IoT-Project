@@ -9,7 +9,10 @@ For presentation purposes, food dispensing is set to happen every 10 seconds.
 The HTML page shows the distance of the sensor from the food, the greater it is, the less food there is in the container. That is nicely shown by the percentage and the progress bar. There is also a button that can be clicked to start dispensing food whenever the owner wishes, after which a notification is displayed below the button. If the amount of food falls below a certain level, the owner will receive a notification.
 
 **Equipment:** NodeMCU ESP8266, Ultrasonic sensor, Servo motor
+
 **Control side:** HTML, CSS, JavaScript
+
 **Executive side:** Equipment & C/C++ in ArduinoIDE
+
 **Connectivity:** Google Firebase
 
